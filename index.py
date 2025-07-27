@@ -1,11 +1,9 @@
 Age = int(input("Enter your age "))
 print("Age=",Age)
-if Age>10:
+if 10 <= Age <= 13:
     print("You are eligible to write this exam.")
-elif Age<13:
-    print("You are eligible to write this exam. ")
 else:
-    print("You can't write this exam")
+    print("You are not eligible to write this exam.")
 from datetime import datetime, time
 cutoff_time = time(21, 0)  
 current_time = datetime.now().time()
